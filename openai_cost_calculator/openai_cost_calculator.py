@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 
 
 def calculate_cost(
-    model_name: str = None, input_tokens: int = 0, output_tokens: int = 0
+    model_name: str | None = None, input_tokens: int = 0, output_tokens: int = 0
 ) -> dict[str, str]:
     """
     Calculate the cost of using an OpenAI model based on the number of input and output tokens.
