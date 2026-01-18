@@ -37,4 +37,10 @@ model_pricing = {
     'meta.llama3-8b-instruct-v1': {'input_price': 0.40, 'output_price': 0.60},
     'meta.llama3-1-70b-instruct-v1:0': {'input_price': 2.65, 'output_price': 3.50},
     'meta.llama3-1-8b-instruct-v1:0': {'input_price': 0.30, 'output_price': 0.60},
+    
+    # --- OpenAI Embeddings ---
+    # Output price is 0 because embeddings return vectors, not tokens.
+    "text-embedding-3-small": {"input_price": 0.02, "output_price": 0.00},
+    "text-embedding-3-large": {"input_price": 0.13, "output_price": 0.00},
+    "text-embedding-ada-002": {"input_price": 0.10, "output_price": 0.00},
 }
